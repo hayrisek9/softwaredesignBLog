@@ -1,3 +1,4 @@
+/* RESET CSS */
 *{
     margin: 0;
     padding: 0;
@@ -6,78 +7,71 @@
 }
 header{
     width: 100%;
-   min-height:73px;
-    background-color: #183642;
+    min-height: 75px;
+    background-color: #65647C;
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 47px;
-    box-shadow: 0 0 43px 3px #183642 ;
-}
-ul{
-    list-style: none;
-}
-nav a{
-    color: antiquewhite;
-    text-decoration: none;
+    padding: 0px 50px;
+    box-shadow: 0px 0px 20px 1px #65647C;
 }
 .logoContainer{
     width: 75px;
     height: 75px;
-    margin-left: 23px;
 }
-.logoContainer img {
+.logoContainer img{
     width: 100%;
 }
-header nav{
-    margin-right: 23px;
-}
-nav ul {
-    display: flex;
-    gap: 29px;
 
+ul {
+    list-style: none;
 }
-.menuBar{
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+.menuIconContainer{
     position: absolute;
-    width: 73px;
-    height: 73px;
-    
+    width: 75px;
+    height: 75px;
     top: 0;
     right: 0;
-     display: none; /* pour JS */
-    /* justify-content: center; */
-    /* margin-top: 29px; */
-
+    display: none
 }
-.menuBar i {
-    color: chartreuse;
-    font-size: 1.3rem;
+.menuIconContainer span{
+    color: #fff;
+    font-size: 1.5rem;
 }
-/* Responsive */
-@media only screen and (max-width: 600px){
-    .menuBar{
+/* RESPONSIVE */
+@media screen and (max-width: 600px) {
+    .menuIconContainer{
         display: flex;
         justify-content: center;
         align-items: center;
-        cursor: pointer;
     }
     header{
         flex-direction: column;
         align-items: flex-start;
-        
+        padding: 0px 30px;
     }
     nav{
         width: 100%;
-         display: none; 
+        display: none;
     }
     nav ul{
+        width: 100%;
         flex-direction: column;
         align-items: center;
-        width: 100%;
     }
     nav ul:last-child{
-        padding-bottom: 29px;
+        padding-bottom: 30px;
     }
 
 }
